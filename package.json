@@ -5,7 +5,7 @@
   "main": "conf.js",
   "scripts": {
     "commit": "git-cz",
-    "postinstall": "./node_modules/protractor/bin/webdriver-manager update",
+    "postinstall": "node ./node_modules/protractor/bin/webdriver-manager update",
     "compile": "tsc --lib es2015",
     "pretest": "npm run compile",
     "test": "protractor output/config.js",
@@ -34,8 +34,8 @@
     "es6-promise": "^4.0.5",
     "jasmine": "^2.5.2",
     "jasmine-reporters": "^2.2.0",
-    "protractor": "^4.0.9",
-    "typescript": "^2.0.3"
+    "protractor": "^5.1.0",
+    "typescript": "2.2"
   },
   "devDependencies": {
     "commitizen": "2.8.6",
