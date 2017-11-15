@@ -5,7 +5,7 @@ const HTMLReport = require('protractor-html-reporter');
 export let config: Config = {
     framework: 'jasmine',
     capabilities: {
-        browserName: 'firefox'
+        browserName: 'chrome'
     },
     directConnect: true,
 
