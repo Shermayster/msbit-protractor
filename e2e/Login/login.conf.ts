@@ -12,6 +12,7 @@ export const LoginConf ={
     },
     'properties': {
         'username': 'Primetimeuadmin',
-        'password': 'Keshet1@'
+        'correctPassword': 'Keshet1@',
+        'incorrectPassword':'Keshet'
     }
 }

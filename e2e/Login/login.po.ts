@@ -15,6 +15,6 @@ fillInput(element_by_css: string, msg: string){
 }
 
 buttonClick (element_by_css: string){
-    element(by.css(element_by_css)).click;
+    element(by.css(element_by_css)).click();
 }
 }
