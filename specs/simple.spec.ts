@@ -18,16 +18,15 @@ describe('Protractor-Idan Test', () => {
         var y = browser.wait(protractor.ExpectedConditions.visibilityOf(x)).then(() => {
             expect(browser.isElementPresent(x)).toBe(true);
           });;
-        browser.close();
+       // browser.close();
     });
-    it('3. Should insert Incorrect string to Login inputs',() =>{
+    it('3. Should insert incorrect string to Login inputs',() =>{
         element(by.className("username")).sendKeys('Primetimeuadmin');
-        element(by.className("password")).sendKeys('Keshet1');
+        element(by.className("password")).sendKeys('Keshet1@');
         element(by.tagName("button")).click();
-        var x = element(by.tagName('toster'));
+        var x = element(by.className('planner-container'));
         var y = browser.wait(protractor.ExpectedConditions.visibilityOf(x)).then(() => {
             expect(browser.isElementPresent(x)).toBe(true);
-          });;
-        browser.close();
-    }); 
+          });
+});
 });
