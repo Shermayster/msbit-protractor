@@ -29,4 +29,4 @@ describe('Protractor-Idan Test', () => {
             expect(browser.isElementPresent(x)).toBe(true);
           });
 });
-});
+})})
