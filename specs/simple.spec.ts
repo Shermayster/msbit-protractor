@@ -6,7 +6,7 @@ describe('Protractor-Idan Test', () => {
         browser.get('https://valor-software.com/ngx-bootstrap');
     });
 
-    it('Should navigate to the demo website',() => {
+    it('test 1',() => {
         expect(browser.getTitle()).toEqual('Angular Bootstrap');
     });
 
