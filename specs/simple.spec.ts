@@ -9,7 +9,7 @@ describe('Protractor-Idan Test', () => {
 
     it('1. Should navigate to the demo website',() => {
         expect(browser.getTitle()).toEqual('Keshet');
-    });
+
     it('2. Should insert correct string to Login inputs',() =>{
         element(by.className("username")).sendKeys('Primetimeuadmin');
         element(by.className("password")).sendKeys('Keshet1@');
