@@ -5,7 +5,7 @@ const HTMLReport = require('protractor-html-reporter');
 export let config: Config = {
     framework: 'jasmine',
     capabilities: {
-        browserName: 'firefox'
+        browserName: 'chrome'
     },
     directConnect: true,
 
@@ -23,22 +23,21 @@ export let config: Config = {
             filePrefix:  frameworkConfig.reporter.resultsFileName
         }));
 
-        const Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+        // const Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 
-        jasmine.getEnv().addReporter(
-            new Jasmine2HtmlReporter({
-                savePath: 'reports/screenshots'
-            })
-        )
+        // jasmine.getEnv().addReporter(
+        //     new Jasmine2HtmlReporter({
+        //         savePath: 'reports/screenshots'
+        //     })
+        // )
     },
 
-    onComplete: () => {
-
-        new HTMLReport().from('./reports/results/xmlTestOutput.xml', {
-            reportTitle: 'Test Execution Report',
-            screenshotPath:'./reports/postResults/screenshots',
-            outputPath: './reports/postResults',
-            testBrowser: 'firefox'
-        })
-    }
+    // onComplete: () => {
+    //     // new HTMLReport().from('./reports/results/xmlTestOutput.xml', {
+    //     //     reportTitle: 'Test Execution Report',
+    //     //     screenshotPath:'./reports/postResults/screenshots',
+    //     //     outputPath: './reports/postResults',
+    //     //     testBrowser: 'chrome'
+    //     // })
+    // }
 };
