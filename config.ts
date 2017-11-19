@@ -9,7 +9,7 @@ export let config: Config = {
     },
     directConnect: true,
 
-    specs: ['./specs/**/*.spec.js'],
+    specs: ['./e2e/**/*.spec.js'],
     seleniumAddress: 'http://localhost:4444/wd/hub',
     baseUrl: 'https://valor-software.com/ngx-bootstrap',
     noGlobals: false,
