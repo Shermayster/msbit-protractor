@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/kasunkv/protractor-starter#readme",
   "dependencies": {
-    "@types/jasmine": "2.5.45",
+    "@types/jasmine": "^2.8.2",
     "@types/node": "^6.0.46",
     "es6-promise": "^4.0.5",
     "jasmine": "^2.5.2",
@@ -37,11 +37,14 @@
     "protractor": "^5.1.0",
     "protractor-html-reporter": "^1.3.2",
     "protractor-jasmine2-html-reporter": "0.0.7",
-    "typescript": "2.2"
+    "typescript": "2.6"
   },
   "devDependencies": {
+    "@types/jasmine": "^2.8.2",
+    "@types/jasminewd2": "^2.0.3",
     "commitizen": "2.8.6",
     "cz-conventional-changelog": "1.2.0",
+    "jasmine-ts": "^0.2.1",
     "semantic-release": "4.3.5"
   },
   "czConfig": {
